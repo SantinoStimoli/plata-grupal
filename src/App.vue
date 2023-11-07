@@ -15,7 +15,7 @@
     <Dialog
       v-model:visible="showFinalUsers"
       modal
-      :header="alert?.status"
+      header="Cuenta Final"
       :style="{ width: '50rem' }"
       :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
     >
@@ -24,7 +24,7 @@
 
     <section class="w-full l:w-[700px] px-5 flex flex-col">
       <h1 class="text-[50px] text-center font-black mb-10">
-        Calculador Juntadas
+        Calculador Grupal
       </h1>
 
       <div
