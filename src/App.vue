@@ -61,7 +61,7 @@ export default {
     return {
       showAlert: false,
       alert: null as { status: string; message: string } | null,
-      users: [{ name: 'as', payment: 1 }] as User[],
+      users: [] as User[],
       showFinalUsers: false,
       finalUsers: [] as User[]
     }
