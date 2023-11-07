@@ -1,6 +1,6 @@
 <template>
   <form @submit="e => createUser(e)" class="flex flex-col gap-5">
-    <h1 class="m-0 font-black">Ingreso de usuarios</h1>
+    <h1 class="m-0 font-black max-sm:text-xl">Ingreso de usuarios</h1>
     <label class="flex flex-col gap-2">
       Nombre:
       <InputText

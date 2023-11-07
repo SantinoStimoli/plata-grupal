@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       emptyUser: {
-        name: 'Ingrese un usuario',
+        name: 'Ingrese los usuarios',
         payment: 0
       }
     }

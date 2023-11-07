@@ -23,7 +23,7 @@
     </Dialog>
 
     <section class="w-full l:w-[700px] px-5 flex flex-col">
-      <h1 class="text-[50px] text-center font-black mb-10">
+      <h1 class="text-[50px] text-center font-black mb-10 max-sm:text-[40px]">
         Calculador Grupal
       </h1>
 
@@ -34,7 +34,7 @@
         <UsersList :users="users" />
       </div>
 
-      <div class="flex gap-5 [&>*]:w-1/2">
+      <div class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2">
         <Button
           v-show="users.length > 0"
           @click="calculate()"

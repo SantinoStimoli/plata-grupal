@@ -3,7 +3,10 @@
     <h2 class="text-2xl font-semibold text-gray-800">
       {{ user?.name }}
     </h2>
-    <p v-show="user?.name !== 'Ingrese un usuario'" class="mt-2 text-gray-600">
+    <p
+      v-show="user?.name !== 'Ingrese los usuarios'"
+      class="mt-2 text-gray-600"
+    >
       {{ final ? (user?.payment < 0 ? 'Le pagan' : 'Paga') : '' }}
       {{
         final
