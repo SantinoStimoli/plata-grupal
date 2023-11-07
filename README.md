@@ -1,18 +1,43 @@
-# Vue 3 + TypeScript + Vite
+# SplitBill App
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+La aplicación web está diseñada para facilitar la división de gastos entre amigos cuando se reúnen. La aplicación ayuda a mantener un registro claro de quién debe cuánto y a quién, simplificando la gestión de gastos compartidos.
 
-## Recommended IDE Setup
+## Uso
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1. Accede a la aplicación en tu navegador web. [Haz click aquí!](https://santinostimoli.github.io/plata-grupal/)
 
-## Type Support For `.vue` Imports in TS
+2. Encontrarás un formulario que te permite agregar amigos y registrar sus aportes.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+3. Ingresa el nombre del amigo y la cantidad que ha contribuido.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+4. Haz clic en el botón "Añadir" para registrar la contribución.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+5. Repite el proceso para agregar tantos amigos como desees.
+
+6. Una vez que hayas agregado a todos tus amigos y sus contribuciones, haz clic en el botón "Calcular" para obtener un resumen de quién debe dinero y a quién le deben.
+
+7. La aplicación mostrará una lista clara con los nombres de las personas y los saldos pendientes, indicando si alguien debe dinero o le deben.
+
+## Características
+
+- Registro de amigos y contribuciones.
+- Cálculo automático de deudas y créditos.
+- Lista clara de nombres de amigos y saldos pendientes.
+- Interfaz fácil de usar y amigable.
+
+## Tecnologías Utilizadas
+
+La App utiliza las siguientes tecnologías:
+
+- Vue.js: Un marco de trabajo de JavaScript para construir aplicaciones web interactivas.
+- PrimeVue: Una biblioteca de componentes Vue que proporciona componentes ricos y personalizables.
+- Tailwind CSS: Un marco de diseño CSS altamente personalizable y fácil de usar.
+- Otras dependencias y módulos de Vue y JavaScript.
+
+## Contribuciones
+
+Si deseas contribuir o mejorar la aplicación, siéntete libre de clonar el repositorio, realizar tus cambios y enviar un Pull Request. Estamos abiertos a colaboraciones.
+
+## Autor
+
+Este proyecto fue creado por Santino Stimoli.
