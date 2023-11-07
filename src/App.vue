@@ -34,7 +34,19 @@
         <UsersList :users="users" />
       </div>
 
-      <Button v-show="users.length > 0" @click="calculate()" label="Calcular" />
+      <div class="flex gap-5 [&>*]:w-1/2">
+        <Button
+          v-show="users.length > 0"
+          @click="calculate()"
+          label="Calcular"
+        />
+        <Button
+          v-show="users.length > 0"
+          @click="() => (users = [])"
+          label="Limpiar"
+          severity="danger"
+        />
+      </div>
     </section>
   </main>
 </template>
@@ -49,7 +61,7 @@ export default {
     return {
       showAlert: false,
       alert: null as { status: string; message: string } | null,
-      users: [] as User[],
+      users: [{ name: 'as', payment: 1 }] as User[],
       showFinalUsers: false,
       finalUsers: [] as User[]
     }

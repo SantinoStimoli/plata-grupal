@@ -5,6 +5,7 @@ import App from './App.vue'
 // STYLE
 import 'primevue/resources/themes/lara-light-indigo/theme.css'
 import './style.css'
+import 'primeicons/primeicons.css'
 
 // COMPONENTS
 import PrimeVue from 'primevue/config'

@@ -2,7 +2,7 @@
   <form @submit="e => createUser(e)" class="flex flex-col gap-5">
     <h1 class="m-0 font-black">Ingreso de usuarios</h1>
     <label class="flex flex-col gap-2">
-      Nombre
+      Nombre:
       <InputText
         required
         v-model="name"
@@ -11,7 +11,7 @@
       />
     </label>
     <label class="flex flex-col gap-2">
-      Pago
+      Plata invertida:
       <InputNumber
         v-model="payment"
         aria-describedby="payment-help"
