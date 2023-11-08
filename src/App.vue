@@ -35,7 +35,7 @@
       </div>
 
       <div
-        class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2 overflow-hidden"
+        class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2 overflow-hidden max-sm:mb-5"
       >
         <Button
           v-show="users.length > 0"
