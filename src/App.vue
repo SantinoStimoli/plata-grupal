@@ -31,7 +31,7 @@
         class="flex justify-between gap-5 mb-5 max-l:flex-col [&>*]:w-1/2 max-l:[&>*]:w-full"
       >
         <Form @addUser="addUser" @setAlert="setAlert" />
-        <UsersList :users="users" />
+        <UsersList @deleteUser="deleteUser" :users="users" />
       </div>
 
       <div class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2">
@@ -61,7 +61,11 @@ export default {
     return {
       showAlert: false,
       alert: null as { status: string; message: string } | null,
-      users: [] as User[],
+      users: [
+        { name: 'sa', payment: 0 },
+        { name: 'aa', payment: 0 },
+        { name: 'as', payment: 0 }
+      ] as User[],
       showFinalUsers: false,
       finalUsers: [] as User[]
     }
@@ -96,6 +100,9 @@ export default {
 
       console.log(this.users)
       console.log(this.finalUsers)
+    },
+    deleteUser(index: number) {
+      this.users.splice(index, 1)
     }
   }
 }

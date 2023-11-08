@@ -1,6 +1,12 @@
 <template>
   <section class="flex flex-col gap-5">
-    <UserCard v-for="user in users" :user="user" :final="final" />
+    <UserCard
+      @deleteUser="deleteUser"
+      v-for="(user, index) in users"
+      :user="user"
+      :index="index"
+      :final="final"
+    />
     <UserCard v-show="users?.length === 0" :user="emptyUser" :final="final" />
   </section>
 </template>
@@ -21,6 +27,11 @@ export default {
     final: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    deleteUser(index: number) {
+      this.$emit('deleteUser', index)
     }
   }
 }
