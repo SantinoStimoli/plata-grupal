@@ -1,4 +1,4 @@
-# SplitBill App
+# Aplicación para dividir gastos 
 
 La aplicación web está diseñada para facilitar la división de gastos entre amigos cuando se reúnen. La aplicación ayuda a mantener un registro claro de quién debe cuánto y a quién, simplificando la gestión de gastos compartidos.
 
