@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-5">
+  <section class="flex flex-col gap-5 l:max-h-[70vh] l:overflow-y-scroll">
     <UserCard
       @deleteUser="deleteUser"
       v-for="(user, index) in users"

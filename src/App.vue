@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col l:w-fit min-h-screen m-auto py-5">
+  <main class="flex flex-col l:w-fit min-h-screen m-auto pt-14 l:h-screen">
     <Dialog
       v-model:visible="showAlert"
       modal
@@ -34,7 +34,9 @@
         <UsersList @deleteUser="deleteUser" :users="users" />
       </div>
 
-      <div class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2">
+      <div
+        class="flex gap-5 max-sm:flex-col max-sm:[&>*]:w-full [&>*]:w-1/2 overflow-hidden"
+      >
         <Button
           v-show="users.length > 0"
           @click="calculate()"
